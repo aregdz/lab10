@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+
 if __name__ == "__main__":
     # Определим универсальное множество
     u = set("abcdefghijklmnopqrstuvwxyz")
@@ -7,8 +8,10 @@ if __name__ == "__main__":
     b = {"d", "f", "g", "o", "v", "y"}
     c = {"d", "e", "j", "k"}
     d = {"a", "b", "f", "g"}
+
     x = (a.intersection(b)).union(c)
     print(f"x = {x}")
+
     # Найдем дополнения множеств
     bn = u.difference(b)
     cn = u.difference(c)
